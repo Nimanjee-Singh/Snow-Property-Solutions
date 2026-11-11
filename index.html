@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snow Property Solutions | Professional Painter & Decorator</title>
+<meta name="description" content="Snow Property Solutions — professional interior & exterior painting, wallpapering and decorating services. Free quotes, fully insured, quality guaranteed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            navy: '#1c2b3a',
+            teal: '#0f6b6b',
+            teal2: '#12867f',
+            gold: '#d69f4c',
+            cream: '#f7f4ee'
+          }
+        },
+        fontFamily: {
+          heading: ['Poppins', 'sans-serif'],
+          body: ['Inter', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body text-brand-navy bg-white">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between py-4">
+    <a href="#home" class="flex items-center gap-2 group">
+      <img src="img/Snow Property Solutions Logo transparent.png" alt="Snow Property Solutions logo" class="w-20 h-20 object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform">
+      
+    </a>
+
+    <nav id="main-nav" class="hidden lg:flex items-center gap-8 font-medium text-sm">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#testimonials" class="nav-link">Reviews</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center gap-4">
+      <a href="tel:+447407072094" class="flex items-center gap-2 text-sm font-semibold nav-link">
+        <i class="fa-solid fa-phone"></i> 07407 072094
+      </a>
+      <a href="#quote" class="bg-brand-gold hover:bg-brand-navy text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-sm">Get a Free Quote</a>
+    </div>
+
+    <button id="menu-toggle" class="lg:hidden text-2xl w-10 h-10 flex items-center justify-center" aria-label="Toggle menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg border-t border-gray-100">
+    <nav class="flex flex-col px-5 py-4 gap-4 font-medium text-brand-navy">
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#gallery" class="mobile-link">Gallery</a>
+      <a href="#process" class="mobile-link">Process</a>
+      <a href="#testimonials" class="mobile-link">Reviews</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#quote" class="bg-brand-gold text-white text-center px-5 py-3 rounded-full font-semibold">Get a Free Quote</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="relative flex items-center min-h-[640px] md:min-h-[720px] pt-28 pb-16 bg-brand-navy overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://sspark.genspark.ai/cfimages?u1=kFoKOyZuUq1Y%2Fot3GRS7ryRpFl1BdMsQtII50pKhK%2FzULj8xRyNZkrp6gJ12VtnP0QZr1AXBLfp9fNCaQvZqhR22F3uJ90QOsfm1NTWN&u2=QbvZVKJ3FuwhtcE8&width=2560"
+         alt="Professional painter working on the exterior of a house with a ladder"
+         class="w-full h-full object-cover opacity-70">
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/80 to-brand-navy/30"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-5 lg:px-8 w-full">
+    <div class="max-w-2xl text-white">
+      <span class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium mb-6 backdrop-blur-sm">
+        <i class="fa-solid fa-star text-brand-gold"></i> Rated 5 stars by local homeowners
+      </span>
+      <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        Painting &amp; Decorating, <span class="text-brand-gold">Done Right</span> The First Time
+      </h1>
+      <p class="text-lg text-gray-200 mb-8 max-w-xl">
+        From single-room refreshes to full exterior repaints, our experienced painters and decorators bring precision, tidiness and a flawless finish to every project — on time, on budget.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#quote" class="bg-brand-gold hover:bg-white hover:text-brand-navy text-white px-7 py-3.5 rounded-full font-semibold transition-colors shadow-lg">
+          Get Your Free Quote <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+        <a href="#gallery" class="border border-white/40 hover:border-white text-white px-7 py-3.5 rounded-full font-semibold transition-colors">
+          View Our Work
+        </a>
+      </div>
+
+      <div class="flex flex-wrap gap-8 mt-12 pt-8 border-t border-white/15">
+        <div>
+          <p class="font-heading text-3xl font-bold text-brand-gold">4+</p>
+          <p class="text-sm text-gray-300">Years Experience</p>
+        </div>
+        <div>
+          <p class="font-heading text-3xl font-bold text-brand-gold">50+</p>
+          <p class="text-sm text-gray-300">Projects Completed</p>
+        </div>
+        <div>
+          <p class="font-heading text-3xl font-bold text-brand-gold">100%</p>
+          <p class="text-sm text-gray-300">Fully Insured</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="bg-brand-cream py-6 border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 flex flex-wrap justify-center gap-x-10 gap-y-3 text-sm font-medium text-brand-navy/80">
+    <span class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-brand-teal"></i> Fully Licensed &amp; Insured</span>
+    <span class="flex items-center gap-2"><i class="fa-solid fa-award text-brand-teal"></i> 2-Year Workmanship Guarantee</span>
+    <span class="flex items-center gap-2"><i class="fa-solid fa-leaf text-brand-teal"></i> Low-VOC &amp; Eco-Friendly Paints</span>
+    <span class="flex items-center gap-2"><i class="fa-solid fa-broom text-brand-teal"></i> Clean, Tidy Job Sites</span>
+    <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-brand-teal"></i> On-Time, Every Time</span>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-brand-teal font-semibold uppercase tracking-wider text-sm">What We Do</span>
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-4">Our Painting &amp; Decorating Services</h2>
+      <p class="text-gray-600">Whatever the size of your project, our skilled team delivers a smooth, long-lasting finish with minimal disruption to your home or business.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="service-card">
+        <div class="icon-badge"><i class="fa-solid fa-house-chimney-window"></i></div>
+        <h3 class="font-heading text-xl font-semibold mb-2">Interior Painting</h3>
+        <p class="text-gray-600 text-sm">Walls, ceilings, trim and doors painted to a smooth, durable finish in the colour and sheen of your choice.</p>
+      </article>
+      <article class="service-card">
+        <div class="icon-badge"><i class="fa-solid fa-house"></i></div>
+        <h3 class="font-heading text-xl font-semibold mb-2">Exterior Painting</h3>
+        <p class="text-gray-600 text-sm">Weatherproof coatings for render, brick, cladding, fascias and fences that protect and refresh your property.</p>
+      </article>
+      <article class="service-card">
+        <div class="icon-badge"><i class="fa-solid fa-scroll"></i></div>
+        <h3 class="font-heading text-xl font-semibold mb-2">Wallpapering</h3>
+        <p class="text-gray-600 text-sm">Precise hanging of feature walls, patterned papers and murals with perfectly matched seams.</p>
+      </article>
+      <article class="service-card">
+        <div class="icon-badge"><i class="fa-solid fa-trowel"></i></div>
+        <h3 class="font-heading text-xl font-semibold mb-2">Plastering &amp; Repairs</h3>
+        <p class="text-gray-600 text-sm">Crack filling, plaster patching and surface preparation to guarantee a flawless painted result.</p>
+      </article>
+      <article class="service-card">
+        <div class="icon-badge"><i class="fa-solid fa-building"></i></div>
+        <h3 class="font-heading text-xl font-semibold mb-2">Commercial Decorating</h3>
+        <p class="text-gray-600 text-sm">Offices, retail units and communal spaces decorated efficiently, often with flexible out-of-hours work.</p>
+      </article>
+      <article class="service-card">
+        <div class="icon-badge"><i class="fa-solid fa-palette"></i></div>
+        <h3 class="font-heading text-xl font-semibold mb-2">Colour Consultation</h3>
+        <p class="text-gray-600 text-sm">Not sure what shade to choose? We help you select colours and finishes that suit your space and light.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="py-20 lg:py-28 bg-brand-cream">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+    <div>
+      <a href="https://wa.me/447407072094" class="image-whatsapp-link" aria-label="WhatsApp Snow Property Solutions on 07407 072094">
+        <img src="img/owner.jpeg" alt="Owner of Snow Property Solutions in branded workwear" class="w-full h-auto object-cover" loading="lazy">
+        <span class="image-whatsapp-badge"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> 07407 072094</span>
+      </a>
+    </div>
+    <div>
+      <span class="text-brand-teal font-semibold uppercase tracking-wider text-sm">About Us</span>
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-5">Skilled Decorators You Can Trust In Your Home</h2>
+      <p class="text-gray-700 mb-4">Snow Property Solutions has been transforming homes and businesses for over 15 years. We're a small, dedicated team who take pride in careful preparation, tidy work and finishes that last — not just quick jobs painted over problems.</p>
+      <p class="text-gray-700 mb-6">Every project starts with a free, no-obligation quote and a clear plan, so you know exactly what to expect from start to finish.</p>
+      <ul class="grid sm:grid-cols-2 gap-4">
+        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-teal mt-1"></i><span class="text-sm text-gray-700">Free, detailed written quotes</span></li>
+        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-teal mt-1"></i><span class="text-sm text-gray-700">Dust sheets &amp; furniture protection</span></li>
+        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-teal mt-1"></i><span class="text-sm text-gray-700">Premium, durable paint brands</span></li>
+        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-teal mt-1"></i><span class="text-sm text-gray-700">Punctual, uniformed tradespeople</span></li>
+        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-teal mt-1"></i><span class="text-sm text-gray-700">Full public liability insurance</span></li>
+        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-teal mt-1"></i><span class="text-sm text-gray-700">2-year workmanship guarantee</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-brand-teal font-semibold uppercase tracking-wider text-sm">How It Works</span>
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-4">A Simple, Stress-Free Process</h2>
+      <p class="text-gray-600">From your first message to the final walk-through, here's how we work together.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="process-step">
+        <div class="step-number">1</div>
+        <h3 class="font-heading font-semibold text-lg mb-2">Get In Touch</h3>
+        <p class="text-sm text-gray-600">Send us your details or call — we'll arrange a free site visit or quote at a time that suits you.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">2</div>
+        <h3 class="font-heading font-semibold text-lg mb-2">Receive Your Quote</h3>
+        <p class="text-sm text-gray-600">We provide a clear, itemised quote with no hidden extras, plus colour and finish recommendations.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">3</div>
+        <h3 class="font-heading font-semibold text-lg mb-2">We Get to Work</h3>
+        <p class="text-sm text-gray-600">Careful prep, protective sheeting and premium materials, all completed on the agreed schedule.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">4</div>
+        <h3 class="font-heading font-semibold text-lg mb-2">Final Walk-Through</h3>
+        <p class="text-sm text-gray-600">We inspect every surface together and only consider the job done once you're delighted with it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="py-20 lg:py-28 bg-brand-cream">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-brand-teal font-semibold uppercase tracking-wider text-sm">Our Work</span>
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-4">Recent Projects</h2>
+      <p class="text-gray-600">A snapshot of interior, exterior and decorating projects completed by our team.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <a href="https://wa.me/447407072094" class="gallery-item" aria-label="WhatsApp Snow Property Solutions on 07407 072094">
+        <img src="img/IMG_9653.jpg" alt="Finished living room interior" loading="lazy">
+        <span class="image-whatsapp-badge"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> 07407 072094</span>
+        <span class="gallery-tag">Living Room</span>
+      </a>
+      <a href="https://wa.me/447407072094" class="gallery-item" aria-label="WhatsApp Snow Property Solutions on 07407 072094">
+        <img src="img/IMG_9654.jpg" alt="Finished hotel-style living area" loading="lazy">
+        <span class="image-whatsapp-badge"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> 07407 072094</span>
+        <span class="gallery-tag">Interior Decorating</span>
+      </a>
+      <a href="https://wa.me/447407072094" class="gallery-item" aria-label="WhatsApp Snow Property Solutions on 07407 072094">
+        <img src="img/IMG_9655.jpg" alt="Decorated room with a TV feature wall" loading="lazy">
+        <span class="image-whatsapp-badge"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> 07407 072094</span>
+        <span class="gallery-tag">Feature Wall</span>
+      </a>
+      <a href="https://wa.me/447407072094" class="gallery-item" aria-label="WhatsApp Snow Property Solutions on 07407 072094">
+        <img src="img/IMG_9656.jpg" alt="Bedroom with a navy and white striped feature wall" loading="lazy">
+        <span class="image-whatsapp-badge"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> 07407 072094</span>
+        <span class="gallery-tag">Bedroom Feature Wall</span>
+      </a>
+      <a href="https://wa.me/447407072094" class="gallery-item" aria-label="WhatsApp Snow Property Solutions on 07407 072094">
+        <img src="img/IMG_9657.jpg" alt="Finished bedroom interior" loading="lazy">
+        <span class="image-whatsapp-badge"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> 07407 072094</span>
+        <span class="gallery-tag">Bedroom Decorating</span>
+      </a>
+      <a href="https://wa.me/447407072094" class="gallery-item" aria-label="WhatsApp Snow Property Solutions on 07407 072094">
+        <img src="img/IMG_9668.jpg" alt="Decorated hotel hallway with framed artwork" loading="lazy">
+        <span class="image-whatsapp-badge"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> 07407 072094</span>
+        <span class="gallery-tag">Hallway Decorating</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-brand-teal font-semibold uppercase tracking-wider text-sm">Customer Reviews</span>
+      <h2 id="testimonials-heading" class="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-4">What Our Customers Say</h2>
+      <p id="testimonials-description" class="text-gray-600">Customer feedback on our painting, decorating and property services.</p>
+    </div>
+    <div id="testimonials-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Testimonials injected by js/main.js -->
+      <div class="testimonial-skeleton"></div>
+      <div class="testimonial-skeleton"></div>
+      <div class="testimonial-skeleton"></div>
+      <div class="testimonial-skeleton"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE / CONTACT ============ -->
+<section id="quote" class="py-20 lg:py-28 bg-brand-navy relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14">
+    <div class="text-white">
+      <span class="text-brand-gold font-semibold uppercase tracking-wider text-sm">Get Started</span>
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-5">Request Your Free, No-Obligation Quote</h2>
+      <p class="text-gray-300 mb-8">Tell us a little about your project and we'll get back to you within one business day with next steps and, where possible, a ballpark estimate.</p>
+
+      <div id="contact" class="space-y-5">
+        <div class="flex items-start gap-4">
+          <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+          <div>
+            <p class="text-sm text-gray-400">Call or text us</p>
+            <a href="tel:+447407072094" class="font-semibold text-lg hover:text-brand-gold transition-colors">07407 072094</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+          <div>
+            <p class="text-sm text-gray-400">Email us</p>
+            <a href="mailto:nimanjee1@gmail.com" class="font-semibold text-lg hover:text-brand-gold transition-colors">nimanjee1@gmail.com</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+          <div>
+            <p class="text-sm text-gray-400">Service area</p>
+            <p class="font-semibold text-lg">Serving London and surrounding areas</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
+          <div>
+            <p class="text-sm text-gray-400">Working hours</p>
+            <p class="font-semibold text-lg">Mon–Sat, 8:00am – 6:00pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8">
+      <form id="quote-form" action="https://formsubmit.co/nimanjee1@gmail.com" method="POST" class="space-y-4">
+        <input type="hidden" name="_subject" value="New quote request - Snow Property Solutions">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="qf-name" class="form-label">Full Name *</label>
+            <input type="text" id="qf-name" name="name" required class="form-input" placeholder="Jane Smith">
+          </div>
+          <div>
+            <label for="qf-phone" class="form-label">Phone</label>
+            <input type="tel" id="qf-phone" name="phone" class="form-input" placeholder="07407 072094">
+          </div>
+        </div>
+        <div>
+          <label for="qf-email" class="form-label">Email *</label>
+          <input type="email" id="qf-email" name="email" required class="form-input" placeholder="jane@example.com">
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="qf-service" class="form-label">Service Needed *</label>
+            <select id="qf-service" name="service" required class="form-input">
+              <option value="" disabled selected>Select a service</option>
+              <option>Interior Painting</option>
+              <option>Exterior Painting</option>
+              <option>Wallpapering</option>
+              <option>Decorating & Finishing</option>
+              <option>Commercial Painting</option>
+              <option>Plastering & Repairs</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="qf-date" class="form-label">Preferred Start Date</label>
+            <input type="text" id="qf-date" name="preferred_date" class="form-input" placeholder="e.g. Mid October, flexible">
+          </div>
+        </div>
+        <div>
+          <label for="qf-message" class="form-label">Project Details *</label>
+          <textarea id="qf-message" name="message" rows="4" required class="form-input" placeholder="Tell us about the rooms, surfaces, or areas you'd like painted or decorated..."></textarea>
+        </div>
+        <button type="submit" id="qf-submit" class="w-full bg-brand-gold hover:bg-brand-teal text-white font-semibold py-3.5 rounded-full transition-colors flex items-center justify-center gap-2">
+          <span id="qf-submit-text">Send Quote Request</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-brand-navy border-t border-white/10 pt-14 pb-8">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 text-gray-300">
+      <div>
+        <a href="#home" class="flex items-center gap-2 mb-4">
+          <img src="img/Snow Property Solutions Logo transparent.png" alt="Snow Property Solutions logo" class="w-14 h-14 object-contain rounded-lg shadow-sm">
+          <span class="font-heading text-lg font-bold text-white">Snow Property <span class="text-brand-gold">Solutions</span></span>
+        </a>
+        <p class="text-sm text-gray-400">Professional painting &amp; decorating for homes and businesses. Quality finishes, guaranteed.</p>
+        <div class="flex gap-3 mt-5">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Houzz"><i class="fa-brands fa-houzz"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-heading font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="footer-link">Services</a></li>
+          <li><a href="#gallery" class="footer-link">Gallery</a></li>
+          <li><a href="#about" class="footer-link">About Us</a></li>
+          <li><a href="#testimonials" class="footer-link">Reviews</a></li>
+          <li><a href="#quote" class="footer-link">Free Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-heading font-semibold mb-4">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="footer-link">Interior Painting</a></li>
+          <li><a href="#services" class="footer-link">Exterior Painting</a></li>
+          <li><a href="#services" class="footer-link">Wallpapering</a></li>
+          <li><a href="#services" class="footer-link">Plastering &amp; Repairs</a></li>
+          <li><a href="#services" class="footer-link">Commercial Decorating</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-heading font-semibold mb-4">Contact</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-gold"></i> 07407 072094</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-gold"></i> nimanjee1@gmail.com</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-gold"></i> London &amp; surrounding areas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
+      <p>&copy; <span id="year"></span> Snow Property Solutions. All rights reserved.</p>
+      <p>Built with care for beautiful, lasting finishes.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="#quote" id="back-to-top" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-brand-gold text-white flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-opacity" aria-label="Get a quote">
+  <i class="fa-solid fa-paint-roller"></i>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
