@@ -14,6 +14,7 @@
 window.SPS_FORMS = window.SPS_FORMS || {
   provider: 'formsubmit',
   formsubmitEmail: 'nimanjee1@gmail.com',
+  ccEmail: 'nimanjee1@gmail.com',
   apiEndpoint: '/api/enquiry',
   timeoutMs: 30000
 };
@@ -121,6 +122,8 @@ window.SPS = (function(){
     fd.append('_subject', subject);
     fd.append('_template', 'table');
     fd.append('_captcha', 'false');
+    if (cfg.ccEmail) fd.append('_cc', cfg.ccEmail);
+    if (fields.email) fd.append('_replyto', String(fields.email));
     Object.keys(fields).forEach(function(k){ fd.append(k, fields[k]); });
     (photos||[]).forEach(function(p, i){ fd.append(i === 0 ? 'attachment' : 'attachment' + (i+1), p.blob, p.name); });
     return fetch('https://formsubmit.co/ajax/' + encodeURIComponent(cfg.formsubmitEmail), { method:'POST', headers:{ 'Accept':'application/json' }, body: fd, signal: ctrl && ctrl.signal })
